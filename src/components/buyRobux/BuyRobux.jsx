@@ -180,13 +180,15 @@ export default function BuyRobux({ token, setError, setToken }) {
                                 >
                                     Проверить и продолжить
                                 </button>
-                                <a
-                                    target='__blank'
-                                    className='main__btn'
-                                    href="https://create.roblox.com/dashboard/creations/experiences/4917567283/passes/877742805/sales"
-                                >
-                                    Настроить Game Pass
-                                </a>
+                                <button className='main__btn'>
+                                    <a
+                                        target='__blank'
+                                        className='main__btn'
+                                        href="https://create.roblox.com/dashboard/creations/experiences/4917567283/passes/877742805/sales"
+                                    >
+                                        Настроить Game Pass
+                                    </a>
+                                </button>
                             </>
                         )
                     }

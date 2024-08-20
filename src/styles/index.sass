@@ -45,6 +45,7 @@ li
   border: none
   background-color: $mainColor
   transition: 0.3s ease-in-out
+  color: $white
 
   &:hover
     background-color: $secondColor
@@ -56,6 +57,7 @@ li
   outline: none
   padding: 1vw 1vw
   border-radius: .8vw
+  color: $white
 
 .search
   animation: search 1s infinite
@@ -91,19 +93,19 @@ li
   transition: .6s
   opacity: 0
 
+  img
+    width: 4vw
+
+  h2
+    font-size: 1.4vw
+
+  p
+    font-size: 1vw
+
   &.active
     transform: translate(0)
     display: flex
     opacity: 1
-
-    img
-      width: 4vw
-
-      h2
-        font-size: 1.4vw
-
-        p
-          font-size: 1vw
 
 @media ( max-width: 720px )
   .container
@@ -157,9 +159,9 @@ li
     background-color: #000000
     background: linear-gradient(140deg, rgba(0,0,0,1) 60%, rgba(231,69,90,1) 100%)
 
-    height: 7vw
-    min-width: 5vw
-    max-width: 40vw
+    height: 20vw
+    min-width: 10vw
+    max-width: 50vw
     padding: 2vw
     border-radius: 1vw
 
@@ -167,16 +169,16 @@ li
     transition: .6s
     opacity: 0
 
+    img
+      width: 8vw
+
+    h2
+      font-size: 4vw
+
+    p
+      font-size: 3vw
+
     &.active
       transform: translate(0)
       display: flex
       opacity: 1
-
-      img
-        width: 4vw
-
-        h2
-          font-size: 1.4vw
-
-          p
-            font-size: 1vw
