@@ -10,7 +10,6 @@
     .main__btn
         a
             padding: 0
-            
 
     .main__container
         background-color: $backConbg
@@ -84,10 +83,12 @@
         input[type="range"]::-webkit-slider-thumb
             // -webkit-appearance: none
             // appearance: none
+            -webkit-user-select: none
+            -moz-user-select: none
             cursor: grab
-            min-width: 6vw
-            min-height: 1vw
-            transform: translateY(-25%)
+            min-width: 4vw
+            min-height: 1.5vw
+            transform: translate(-25%, -35%)
             opacity: 0
             // background-color: transparent // Убираем фон, так как мы используем свой кастомный элемент
 
