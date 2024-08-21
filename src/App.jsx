@@ -28,7 +28,6 @@ export default function App() {
     if (savedToken) {
       try {
         const parsedToken = JSON.parse(savedToken);
-        console.log("Parsed token:", parsedToken);
         setToken(parsedToken);
       } catch (e) {
         console.error("Failed to parse token:", e);
@@ -38,12 +37,10 @@ export default function App() {
 
   useEffect(() => {
     // Сохранение токена в localStorage при его изменении
-    console.log('tok: ', token);
     
     if (token) {
       try {
         const stringifiedToken = JSON.stringify(token);
-        console.log("Stringified token:", stringifiedToken);
         localStorage.setItem("token", stringifiedToken);
       } catch (e) {
         console.error("Failed to stringify token:", e);
